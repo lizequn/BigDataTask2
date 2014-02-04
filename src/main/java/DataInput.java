@@ -36,9 +36,11 @@ public class DataInput {
             String action = null;
             int status = 0;
             long size = 0;
+            BatchStatement batchStatement = new BatchStatement();
             //32600    [30/Apr/1998:21:30:17   +0000]  "GET  /images/hm_bg.jpg    HTTP/1.0"  200   24736
             while((line = bufferedReader.readLine())!= null && line.length()!=0) {
                 i++;
+
                 String[] tokens = line.split(" ");
                 id = Integer.parseInt(tokens[0]);
                 String dateString = tokens[1]+" "+tokens[2];
@@ -50,7 +52,12 @@ public class DataInput {
                 }else {
                     size = Long.parseLong(tokens[7]);
                 }
-                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
+                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
+//                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
+                if(i%100 == 0){
+                    resultSet = session.execute(batchStatement);
+                    batchStatement = new BatchStatement();
+                }
                 if(i%100000 == 0){
                     System.out.println(i);
 

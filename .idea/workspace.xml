@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de85878-23cc-4565-a647-229b7f16d97d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DataCount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/DataFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task2.iml" afterPath="$PROJECT_DIR$/Task2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testDataInput.java" afterPath="$PROJECT_DIR$/src/test/java/testDataInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468921344" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391524160782" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391532458094" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
-    <file path="/DataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391476775610" ignored="false" />
+    <file path="/DataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391532799234" ignored="false" />
     <file path="/testDataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391530203041" ignored="false" />
     <file path="/DataCount.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391530379321" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,10 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataInput.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="43" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.9456119">
+            <state line="56" column="31" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testDataInput.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="testDataInput.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testDataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+            <state line="25" column="44" selection-start="690" selection-end="690" vertical-scroll-proportion="0.29238328">
               <folding />
             </state>
           </provider>
@@ -292,7 +287,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.testDataInput.dataCount">
+  <component name="RunManager" selected="JUnit.testDataInput.dataInput">
     <configuration default="false" name="testDataInput.dataInput" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Task2" />
@@ -460,8 +455,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.testDataInput.dataCount" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testDataInput.dataInput" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.testDataInput.dataInput" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.testDataInput.dataCount" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.testDataInput" />
       </list>
     </recent_temporary>
@@ -494,13 +489,18 @@
       <created>1391461828962</created>
       <updated>1391461828962</updated>
     </task>
+    <task id="LOCAL-00001" summary="data input">
+      <created>1391532462311</created>
+      <updated>1391532462311</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -518,8 +518,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12659235" sideWeight="0.6701361" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26901522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12659235" sideWeight="0.4859888" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5140112" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -569,7 +569,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="data input" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -583,6 +583,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="data input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -690,16 +691,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testDataInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+        <state line="56" column="31" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testDataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="43" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.9456119">
+        <state line="25" column="44" selection-start="690" selection-end="690" vertical-scroll-proportion="0.29238328">
           <folding />
         </state>
       </provider>
