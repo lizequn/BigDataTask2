@@ -1,7 +1,4 @@
-import com.datastax.driver.core.BoundStatement;
-import com.datastax.driver.core.PreparedStatement;
-import com.datastax.driver.core.ResultSetFuture;
-import com.datastax.driver.core.Session;
+import com.datastax.driver.core.*;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -31,7 +28,7 @@ public class DataInput {
             CassandraController controller = CassandraController.getInstance();
             Session session = controller.getSession();
             PreparedStatement statement1 = session.prepare("insert into log (clientid,accesstime,action,status,size) values(?,?,?,?,?)");
-            ResultSetFuture resultSetFuture = null;
+            ResultSet resultSet = null;
             String line = null;
             Date date = null;
             long i = 0;
@@ -53,12 +50,14 @@ public class DataInput {
                 }else {
                     size = Long.parseLong(tokens[7]);
                 }
-                resultSetFuture = session.executeAsync(new BoundStatement(statement1).bind(id,date,action,status,size));
-                if(i%10000 == 0){
+                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
+                if(i%100000 == 0){
                     System.out.println(i);
+
                 }
             }
-            resultSetFuture.getUninterruptibly();
+
+
             session.shutdown();
             return i;
 

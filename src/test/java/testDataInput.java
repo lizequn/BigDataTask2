@@ -13,9 +13,16 @@ import java.text.ParseException;
 public class testDataInput {
     @Test
     public void dataInput() throws IOException, ParseException {
-        DataInput dataInput = new DataInput("/home/zzz/cassandra1/DevCenter","loglite");
+        DataInput dataInput = new DataInput("D:/","loglite");
         long result = dataInput.transferData();
         System.out.println(result);
         Assert.assertTrue(result>0);
+    }
+   // @Test
+    public void dataCount() {
+        DataCount dataCount1 = new DataCount();
+        long i =dataCount1.getCount();
+        System.out.println(i);
+        Assert.assertEquals(i,100000000);
     }
 }
