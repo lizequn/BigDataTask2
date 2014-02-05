@@ -8,7 +8,7 @@ public class DataCount {
     private final CassandraController controller = CassandraController.getInstance();
     private final Session session;
     public DataCount(){
-        session = controller.getSession();
+        session = controller.getSession(2);
     }
     public long getCount(){
         System.out.println("begin");
