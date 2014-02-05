@@ -1,0 +1,9 @@
+use "task2";
+create table "log"(
+	clientid bigint,
+	accesstime timestamp,
+	action text,
+	status int,
+	size bigint,
+	primary key(clientid,accesstime,action)
+);
