@@ -17,6 +17,7 @@ limitations under the License.
 
 import com.clearspring.analytics.stream.cardinality.HyperLogLog;
 
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -116,4 +117,14 @@ public class SiteSession {
         globalLastHitMillis = 0;
     }
 
+    @Override
+    public String toString() {
+        return "SiteSession{" +
+                "firstHit=" + new Date(firstHitMillis) +
+                ", hitCount=" + hitCount +
+                ", id='" + id + '\'' +
+                ", lastHit=" + new Date(lastHitMillis) +
+                ",urlCounter=" + hyperLogLog.cardinality()+
+                '}';
+    }
 }
