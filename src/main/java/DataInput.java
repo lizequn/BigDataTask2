@@ -20,6 +20,7 @@ public class DataInput {
     }
 
     public long transferData() throws IOException, ParseException, InterruptedException {
+        System.out.println("begin transfer");
         final File dataDir = new File(filePath);
         final File logFile = new File(dataDir, fileName);
         try (
@@ -95,6 +96,7 @@ public class DataInput {
                     System.out.println(i);
 
                 }
+
             }
 
 
