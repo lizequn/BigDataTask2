@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de85878-23cc-4565-a647-229b7f16d97d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Cql" afterPath="$PROJECT_DIR$/src/main/java/Cql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testInputData.java" afterPath="$PROJECT_DIR$/src/test/java/testInputData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391615764653" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391616160612" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
@@ -81,10 +81,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataInput.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="91" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+            <state line="85" column="28" selection-start="3808" selection-end="3808" vertical-scroll-proportion="0.73536897">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testSiteSession.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="testSiteSession.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.77862597">
+            <state line="26" column="42" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/main/java/TransferData.java" />
         <option value="$PROJECT_DIR$/src/main/java/LogDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/CassandraController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Cql" />
         <option value="$PROJECT_DIR$/src/test/java/testDataInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/SiteSession.java" />
@@ -160,9 +168,80 @@
         <option value="$PROJECT_DIR$/src/test/java/testSiteSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataCount.java" />
         <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Cql" />
         <option value="$PROJECT_DIR$/src/main/java/DataInput.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="weblogcoursework" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="weblogcoursework" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="weblogcoursework" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="failsafe" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="weblogcoursework" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -399,6 +478,28 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -545,7 +646,11 @@
       <created>1391615769265</created>
       <updated>1391615769265</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change for remote">
+      <created>1391616164585</created>
+      <updated>1391616164585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -567,7 +672,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32961783" sideWeight="0.65172136" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18710192" sideWeight="0.65172136" order="0" side_tool="false" content_ui="combo" />
@@ -621,7 +726,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishv1" />
+    <option name="LAST_COMMIT_MESSAGE" value="change for remote" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -638,6 +743,7 @@
     <MESSAGE value="data input" />
     <MESSAGE value="data input change data structure" />
     <MESSAGE value="finishv1" />
+    <MESSAGE value="change for remote" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,13 +793,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SiteSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="54" selection-start="3650" selection-end="3650" vertical-scroll-proportion="1.4879807">
@@ -719,19 +818,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testDataFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+        <state line="15" column="46" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="42" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testDataFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -744,17 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="91" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+        <state line="85" column="28" selection-start="3808" selection-end="3808" vertical-scroll-proportion="0.73536897">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.77862597">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
