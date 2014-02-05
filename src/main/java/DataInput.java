@@ -24,7 +24,8 @@ public class DataInput {
         final File logFile = new File(dataDir, fileName);
         try (
                 final FileInputStream fileInputStream = new FileInputStream(logFile);
-                final InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+                final GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream) ;
+                final InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
                 final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)
         ) {
             CassandraController controller = CassandraController.getInstance();

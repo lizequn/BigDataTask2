@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de85878-23cc-4565-a647-229b7f16d97d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
-      <change type="DELETED" beforePath="D:\javaProject2\BigDataTask2\src\test\java\testDataInput.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataCount.java" afterPath="$PROJECT_DIR$/src/main/java/DataCount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataFilter.java" afterPath="$PROJECT_DIR$/src/main/java/DataFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SiteSession.java" afterPath="$PROJECT_DIR$/src/main/java/SiteSession.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testInputData.java" afterPath="$PROJECT_DIR$/src/test/java/testInputData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testSiteSession.java" afterPath="$PROJECT_DIR$/src/test/java/testSiteSession.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391602659226" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391615764653" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
-    <file path="/DataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391597131576" ignored="false" />
+    <file path="/DataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391616134802" ignored="false" />
     <file path="/testDataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391530203041" ignored="false" />
     <file path="/DataCount.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391615138708" ignored="false" />
     <file path="/fragment.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391541217885" ignored="false" />
@@ -87,6 +81,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="DataInput.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="91" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="testDataFilter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testDataFilter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testInputData.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="testInputData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="6" selection-start="583" selection-end="583" vertical-scroll-proportion="0.34605598">
+            <state line="16" column="106" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testSiteSession.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="testSiteSession.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+            <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.77862597">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,14 +153,14 @@
         <option value="$PROJECT_DIR$/src/main/java/LogDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/CassandraController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cql" />
-        <option value="$PROJECT_DIR$/src/main/java/DataInput.java" />
         <option value="$PROJECT_DIR$/src/test/java/testDataInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/SiteSession.java" />
         <option value="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/testSiteSession.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataCount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataInput.java" />
       </list>
     </option>
   </component>
@@ -538,7 +541,11 @@
       <created>1391597565865</created>
       <updated>1391597565865</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finishv1">
+      <created>1391615769265</created>
+      <updated>1391615769265</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -614,7 +621,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="data input change data structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishv1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -630,6 +637,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="data input" />
     <MESSAGE value="data input change data structure" />
+    <MESSAGE value="finishv1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -686,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="33" selection-start="3745" selection-end="3745" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SiteSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="54" selection-start="3650" selection-end="3650" vertical-scroll-proportion="1.4879807">
@@ -727,15 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="46" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
@@ -745,8 +737,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="583" selection-end="583" vertical-scroll-proportion="0.34605598">
+        <state line="16" column="106" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="91" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="6" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.77862597">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

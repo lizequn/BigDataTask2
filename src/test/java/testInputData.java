@@ -13,8 +13,8 @@ import java.text.ParseException;
 public class testInputData {
     @Test
     public void dataInput() throws IOException, ParseException, InterruptedException {
-        DataInput dataInput = new DataInput("D:/","loglite");
-        //DataInput dataInput = new DataInput("/largedata","loglite");
+       // DataInput dataInput = new DataInput("D:/","loglite");
+        DataInput dataInput = new DataInput("/home/ubuntu/data/cassandra-test-dataset","CSC8101-logfile.gz");
         long result = dataInput.transferData();
         System.out.println(result);
         Assert.assertTrue(result > 0);
