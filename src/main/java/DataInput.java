@@ -44,7 +44,6 @@ public class DataInput {
             //32600    [30/Apr/1998:21:30:17   +0000]  "GET  /images/hm_bg.jpg    HTTP/1.0"  200   24736
             while((line = bufferedReader.readLine())!= null && line.length()!=0) {
                 i++;
-
                 String[] tokens = line.split(" ");
                 if(tokens.length != 8){
                     String[] oldTokens = tokens;
@@ -57,15 +56,16 @@ public class DataInput {
                         tokens[j] = "";
                     }
                 }
+
                 id = Long.parseLong(tokens[0]);
+
                 if(!tokens[1].equals("")&&!tokens[2].equals("")){
                     String dateString = tokens[1]+" "+tokens[2];
                     date = dateFormat.parse(dateString);
-
                 }else {
                     date = new Date(0);
-
                 }
+
                 if(tokens[3].equals("")||tokens[4].equals("")||tokens[5].equals("")){
                     action =tokens[3]+tokens[4]+tokens[5];
                 } else {
@@ -85,7 +85,7 @@ public class DataInput {
                     resultQueen.add(session.executeAsync(batchStatement));
                     batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
                 }
-                if(i%100 == 0){
+                if(i%1000 == 0){
                     while(!resultQueen.isEmpty()){
                         ResultSetFuture resultSetFuture = resultQueen.take();
                         resultSetFuture.getUninterruptibly();
@@ -98,8 +98,6 @@ public class DataInput {
                 }
 
             }
-
-
             session.shutdown();
             return i;
 
