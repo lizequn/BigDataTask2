@@ -30,7 +30,7 @@ public class DataInput {
                 final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)
         ) {
             CassandraController controller = CassandraController.getInstance();
-            Session session = controller.getSession(1);
+            Session session = controller.getSession();
             PreparedStatement statement1 = session.prepare("insert into log (clientid,accesstime,action,status,size) values(?,?,?,?,?)");
             BlockingQueue<ResultSetFuture> resultQueen = new LinkedBlockingQueue<>();
             String line = null;

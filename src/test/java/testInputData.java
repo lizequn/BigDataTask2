@@ -11,7 +11,7 @@ import java.text.ParseException;
  * Time: 19:14
  */
 public class testInputData {
-   // @Test
+    @Test
     public void dataInput() throws IOException, ParseException, InterruptedException {
        // DataInput dataInput = new DataInput("D:/","loglite");
         DataInput dataInput = new DataInput("/home/ubuntu/data/cassandra-test-dataset","CSC8101-logfile.gz");
@@ -20,7 +20,7 @@ public class testInputData {
         Assert.assertTrue(result > 0);
     }
 
-    @Test
+   // @Test
     public void dataCount() {
         DataCount dataCount1 = new DataCount();
         long i =dataCount1.getCount();
