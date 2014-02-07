@@ -38,12 +38,12 @@ public class CassandraController {
     }
 
     private void setupConnect(){
-        cluster = new Cluster.Builder().addContactPoint("ec2-54-194-150-183.eu-west-1.compute.amazonaws.com").build();
+        cluster = new Cluster.Builder().addContactPoint("127.0.0.1").build();
         session = cluster.connect(keyspace);
     }
     private void setupPoolingConnect(int num){
         int numberOfConnections = num;
-        cluster = new Cluster.Builder().addContactPoint("ec2-54-194-150-183.eu-west-1.compute.amazonaws.com").build();
+        cluster = new Cluster.Builder().addContactPoint("127.0.0.1").build();
         PoolingOptions poolingOptions = cluster.getConfiguration().getPoolingOptions();
         poolingOptions.setCoreConnectionsPerHost(HostDistance.LOCAL, numberOfConnections);
         poolingOptions.setMaxConnectionsPerHost(HostDistance.LOCAL, numberOfConnections);

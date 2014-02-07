@@ -46,6 +46,7 @@ public class DataInput {
                 i++;
                 String[] tokens = line.split(" ");
                 if(tokens.length != 8){
+                    System.out.println("error happens");
                     String[] oldTokens = tokens;
                     tokens = new String[8];
                     int j;
@@ -72,27 +73,30 @@ public class DataInput {
                     action = tokens[3].substring(1)+tokens[4]+tokens[5].substring(0,tokens[5].length()-1);
                 }
 
-
-                status = Integer.parseInt(tokens[6]);
+                if(tokens[6].equals("")){
+                    status = 0;
+                }else {
+                    status = Integer.parseInt(tokens[6]);
+                }
                 if(tokens[7].equals("-")){
                     size = 0;
                 }else {
                     size = Long.parseLong(tokens[7]);
                 }
-                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
-//                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
-                if(i%20== 0){
-                    resultQueen.add(session.executeAsync(batchStatement));
-                    batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
-                }
-                if(i%1000 == 0){
-                    while(!resultQueen.isEmpty()){
-                        ResultSetFuture resultSetFuture = resultQueen.take();
-                        resultSetFuture.getUninterruptibly();
-                    }
-
-                }
-                if(i%100000 == 0){
+//                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
+////                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
+//                if(i%20== 0){
+//                    resultQueen.add(session.executeAsync(batchStatement));
+//                    batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
+//                }
+//                if(i%1000 == 0){
+//                    while(!resultQueen.isEmpty()){
+//                        ResultSetFuture resultSetFuture = resultQueen.take();
+//                        resultSetFuture.getUninterruptibly();
+//                    }
+//
+//                }
+                if(i%1000000 == 0){
                     System.out.println(i);
 
                 }
