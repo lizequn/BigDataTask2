@@ -2,24 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de85878-23cc-4565-a647-229b7f16d97d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataCount.java" afterPath="$PROJECT_DIR$/src/main/java/DataCount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testInputData.java" afterPath="$PROJECT_DIR$/src/test/java/testInputData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391618441052" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391701028917" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
     <file path="/DataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391618424058" ignored="false" />
     <file path="/testDataInput.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391530203041" ignored="false" />
-    <file path="/DataCount.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391615138708" ignored="false" />
+    <file path="/DataCount.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391779158582" ignored="false" />
     <file path="/fragment.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391541217885" ignored="false" />
     <file path="/CassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391544197080" ignored="false" />
     <file path="/DataFilter.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391609026164" ignored="false" />
     <file path="/testDataFilter.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391606632994" ignored="false" />
+    <file path="/testInputData.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391779117265" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataInput.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="23" selection-start="3668" selection-end="3668" vertical-scroll-proportion="0.65683866">
+            <state line="74" column="16" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testInputData.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="testInputData.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="106" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+            <state line="20" column="26" selection-start="626" selection-end="626" vertical-scroll-proportion="0.22276822">
               <folding />
             </state>
           </provider>
@@ -121,7 +123,7 @@
       <file leaf-file-name="DataCount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+            <state line="22" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,10 +167,10 @@
         <option value="$PROJECT_DIR$/src/main/java/SiteSession.java" />
         <option value="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/testSiteSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataCount.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cql" />
         <option value="$PROJECT_DIR$/src/main/java/DataInput.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataCount.java" />
       </list>
     </option>
   </component>
@@ -643,7 +645,11 @@
       <created>1391618445050</created>
       <updated>1391618445050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change for remote">
+      <created>1391701033331</created>
+      <updated>1391701033331</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -820,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="106" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="48" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
@@ -843,16 +842,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="74" column="16" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="23" selection-start="3668" selection-end="3668" vertical-scroll-proportion="0.65683866">
+        <state line="22" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="26" selection-start="626" selection-end="626" vertical-scroll-proportion="0.22276822">
           <folding />
         </state>
       </provider>

@@ -12,7 +12,7 @@ public class DataCount {
     }
     public long getCount(){
         System.out.println("begin");
-        ResultSet resultSet = session.execute("Select * from log where aaa = 2");
+        ResultSet resultSet = session.execute("Select * from log");
         System.out.println("end");
         long count = 0;
         for(Row row:resultSet){
@@ -22,6 +22,5 @@ public class DataCount {
             }
         }
         return count;
-
     }
 }
