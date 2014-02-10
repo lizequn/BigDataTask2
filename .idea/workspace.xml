@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392051725843" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392051747831" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="27" selection-start="4031" selection-end="4031" vertical-scroll-proportion="0.6789517">
+            <state line="35" column="44" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.23095824">
               <folding />
             </state>
           </provider>
@@ -112,7 +112,7 @@
       <file leaf-file-name="testInputData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="22" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="18" column="44" selection-start="599" selection-end="611" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -647,7 +647,11 @@
       <created>1392051729481</created>
       <updated>1392051729481</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change for remote">
+      <created>1392051752095</created>
+      <updated>1392051752095</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -849,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CassandraController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="57" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
@@ -877,9 +874,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="599" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="27" selection-start="4031" selection-end="4031" vertical-scroll-proportion="0.6789517">
+        <state line="35" column="44" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.23095824">
           <folding />
         </state>
       </provider>
