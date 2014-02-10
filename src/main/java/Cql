@@ -1,9 +1,11 @@
 use "task2";
   create table "log"(
-  	clientid bigint,
+  	clientid int,
   	accesstime timestamp,
   	action text,
   	status int,
-  	size bigint,
+  	size int,
   	primary key(clientid,accesstime,action)
   );
+  CREATE KEYSPACE task2
+    WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
