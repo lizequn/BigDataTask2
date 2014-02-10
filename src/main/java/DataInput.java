@@ -85,7 +85,7 @@ public class DataInput {
                 }
                 batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
 //                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
-                if(i%20== 0){
+                if(i%50== 0){
                     resultQueen.add(session.executeAsync(batchStatement));
                     batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
                 }
@@ -94,19 +94,13 @@ public class DataInput {
                         ResultSetFuture resultSetFuture = resultQueen.take();
                         resultSetFuture.getUninterruptibly();
                     }
-
                 }
                 if(i%1000000 == 0){
                     System.out.println(i);
-
                 }
-
             }
             session.shutdown();
             return i;
-
-
-
         }
     }
 

@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
     <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392051747831" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392051871925" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
@@ -85,25 +85,7 @@
       <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="44" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.23095824">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="38" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataCount.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataCount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+            <state line="90" column="33" selection-start="4032" selection-end="4032" vertical-scroll-proportion="0.6797707">
               <folding />
             </state>
           </provider>
@@ -113,24 +95,6 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="44" selection-start="599" selection-end="611" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CassandraController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CassandraController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="57" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="55" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -651,7 +615,11 @@
       <created>1392051752095</created>
       <updated>1392051752095</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="change for remote">
+      <created>1392051874931</created>
+      <updated>1392051874931</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -883,7 +851,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="44" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.23095824">
+        <state line="90" column="33" selection-start="4032" selection-end="4032" vertical-scroll-proportion="0.6797707">
           <folding />
         </state>
       </provider>
