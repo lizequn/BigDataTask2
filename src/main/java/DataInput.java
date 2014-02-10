@@ -83,19 +83,19 @@ public class DataInput {
                 }else {
                     size = Long.parseLong(tokens[7]);
                 }
-//                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
-////                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
-//                if(i%20== 0){
-//                    resultQueen.add(session.executeAsync(batchStatement));
-//                    batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
-//                }
-//                if(i%1000 == 0){
-//                    while(!resultQueen.isEmpty()){
-//                        ResultSetFuture resultSetFuture = resultQueen.take();
-//                        resultSetFuture.getUninterruptibly();
-//                    }
-//
-//                }
+                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
+//                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
+                if(i%10== 0){
+                    resultQueen.add(session.executeAsync(batchStatement));
+                    batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
+                }
+                if(i%100 == 0){
+                    while(!resultQueen.isEmpty()){
+                        ResultSetFuture resultSetFuture = resultQueen.take();
+                        resultSetFuture.getUninterruptibly();
+                    }
+
+                }
                 if(i%1000000 == 0){
                     System.out.println(i);
 
