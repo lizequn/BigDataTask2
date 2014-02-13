@@ -7,7 +7,7 @@ import java.util.List;
  * Date: 05/02/14
  */
 public class testDataFilter {
-    //@Test
+    @Test
     public void getSessions(){
         final long id =2;
         DataFilter filter = new DataFilter();

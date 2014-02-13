@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de85878-23cc-4565-a647-229b7f16d97d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataInput.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataFilter.java" afterPath="$PROJECT_DIR$/src/main/java/DataFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SiteSession.java" afterPath="$PROJECT_DIR$/src/main/java/SiteSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testDataFilter.java" afterPath="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testInputData.java" afterPath="$PROJECT_DIR$/src/test/java/testInputData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\javaProject2\BigDataTask2\src\main\java\DataInput.java" afterPath="$PROJECT_DIR$/src/main/java/DataStream.java" />
     </list>
     <ignored path="Task2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testSiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391468685925" ignored="false" />
-    <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391610816028" ignored="false" />
-    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392206059632" ignored="false" />
+    <file path="/SiteSession.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392306234213" ignored="false" />
+    <file path="/Dummy.txt" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392305122349" ignored="false" />
     <file path="$USER_HOME$/Task1/src/test/java/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472543530" ignored="false" />
     <file path="/testCassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472539277" ignored="false" />
     <file path="$USER_HOME$/Task1/.idea/workspace.xml" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391472648176" ignored="false" />
@@ -18,7 +22,7 @@
     <file path="/DataCount.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391779158582" ignored="false" />
     <file path="/fragment.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391541217885" ignored="false" />
     <file path="/CassandraController.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391544197080" ignored="false" />
-    <file path="/DataFilter.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391609026164" ignored="false" />
+    <file path="/DataFilter.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392307445208" ignored="false" />
     <file path="/testDataFilter.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391606632994" ignored="false" />
     <file path="/testInputData.java" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1391779117265" ignored="false" />
     <file path="/Cql" changelist="0de85878-23cc-4565-a647-229b7f16d97d" time="1392051587409" ignored="false" />
@@ -36,7 +40,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,6 +76,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -82,19 +86,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataInput.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+      <file leaf-file-name="DataStream.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="112" selection-start="623" selection-end="623" vertical-scroll-proportion="0.1391162">
+            <state line="84" column="17" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testInputData.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
+      <file leaf-file-name="DataFilter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="44" selection-start="599" selection-end="611" vertical-scroll-proportion="0.0">
+            <state line="40" column="13" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.5286416">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteSession.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SiteSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="14" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,15 +135,16 @@
         <option value="$PROJECT_DIR$/src/main/java/TransferData.java" />
         <option value="$PROJECT_DIR$/src/main/java/LogDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/testDataInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SiteSession.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/testSiteSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/CassandraController.java" />
         <option value="$PROJECT_DIR$/src/test/java/testInputData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cql" />
+        <option value="$PROJECT_DIR$/src/test/java/testDataFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataInput.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SiteSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataFilter.java" />
       </list>
     </option>
   </component>
@@ -624,7 +638,11 @@
       <created>1392052062191</created>
       <updated>1392052062191</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="change for remote">
+      <created>1392206859648</created>
+      <updated>1392206859648</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -654,6 +672,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -668,13 +687,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.7966373" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29976115" sideWeight="0.6701361" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13216561" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5070533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -759,7 +777,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
@@ -790,26 +808,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testDataFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4624" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="42" selection-start="842" selection-end="842" vertical-scroll-proportion="0.3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SiteSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="54" selection-start="3650" selection-end="3650" vertical-scroll-proportion="2.9376" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="55" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CassandraController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="57" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0">
@@ -822,11 +820,6 @@
         <state line="22" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="38" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testInputData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="44" selection-start="599" selection-end="611" vertical-scroll-proportion="0.0">
@@ -834,9 +827,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Cql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="112" selection-start="623" selection-end="623" vertical-scroll-proportion="0.1391162">
+        <state line="5" column="83" selection-start="107" selection-end="107" vertical-scroll-proportion="0.069615066" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSiteSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testDataFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="224" selection-end="234" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="17" selection-start="3310" selection-end="3310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SiteSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="14" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="13" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.5286416">
           <folding />
         </state>
       </provider>

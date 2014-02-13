@@ -31,7 +31,7 @@ public class SiteSession {
     public static long MAX_IDLE_MS = TimeUnit.MINUTES.toMillis(30);
     private static long globalLastHitMillis;
 
-    private final String id;
+    private final int id;
     private final long firstHitMillis;
     private long lastHitMillis;
     private long hitCount = 0;
@@ -46,14 +46,14 @@ public class SiteSession {
      * @param firstHitMillis the time of the first hit in the session, in milliseconds since unix epoch
      * @param url the url of the first hit
      */
-    public SiteSession(String id, long firstHitMillis, String url) {
+    public SiteSession(int id, long firstHitMillis, String url) {
 
         this.id = id;
         this.firstHitMillis = firstHitMillis;
         update(firstHitMillis, url);
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 

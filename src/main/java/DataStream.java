@@ -9,18 +9,17 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.zip.GZIPInputStream;
 
-public class DataInput {
+public class DataStream {
     private final String filePath;
     private final String fileName;
     private final DateFormat dateFormat = new SimpleDateFormat("[dd/MMM/yyyy:HH:mm:ss z]");
 
-    public DataInput(String inputpath,String filename){
+    public DataStream(String inputpath, String filename){
         this.filePath = inputpath;
         this.fileName = filename;
     }
 
     public long transferData() throws IOException, ParseException, InterruptedException {
-        System.out.println("begin transfer");
         final File dataDir = new File(filePath);
         final File logFile = new File(dataDir, fileName);
         try (
@@ -29,10 +28,6 @@ public class DataInput {
                 final InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
                 final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)
         ) {
-            CassandraController controller = CassandraController.getInstance();
-            Session session = controller.getSession();
-            PreparedStatement statement1 = session.prepare("insert into log (clientid,accesstime,action,status,size) values(?,?,?,?,?)");
-            BlockingQueue<ResultSetFuture> resultQueen = new LinkedBlockingQueue<>();
             String line = null;
             Date date = null;
             long i = 0;
@@ -83,23 +78,11 @@ public class DataInput {
                 }else {
                     size = Integer.parseInt(tokens[7]);
                 }
-                batchStatement.add(new BoundStatement(statement1).bind(id, date, action, status, size));
-//                resultSet = session.execute(new BoundStatement(statement1).bind(id, date, action, status, size));
-                if(i%50== 0){
-                    resultQueen.add(session.executeAsync(batchStatement));
-                    batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
-                }
-                if(i%1000 == 0){
-                    while(!resultQueen.isEmpty()){
-                        ResultSetFuture resultSetFuture = resultQueen.take();
-                        resultSetFuture.getUninterruptibly();
-                    }
-                }
+
                 if(i%1000000 == 0){
                     System.out.println(i);
                 }
             }
-            session.shutdown();
             return i;
         }
     }
