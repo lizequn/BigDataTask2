@@ -1,11 +1,11 @@
-use "task2";
-  create table "log"(
-  	clientid int,
-  	accesstime timestamp,
-  	action text,
-  	status int,
-  	size int,
-  	primary key(clientid,accesstime,action)
-  );
-  CREATE KEYSPACE task2
+ CREATE KEYSPACE task2
     WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+use "task2";
+  create table "sessions"(
+  	clientid int,
+  	starttime timestamp,
+  	endtime timestamp,
+  	totalhit bigint,
+  	totalurl bigint,
+  	primary key(clientid,starttime)
+  );

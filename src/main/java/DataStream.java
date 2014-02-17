@@ -13,10 +13,11 @@ public class DataStream {
     private final String filePath;
     private final String fileName;
     private final DateFormat dateFormat = new SimpleDateFormat("[dd/MMM/yyyy:HH:mm:ss z]");
-
+    private final DataFilter dataFilter;
     public DataStream(String inputpath, String filename){
         this.filePath = inputpath;
         this.fileName = filename;
+        dataFilter = new DataFilter();
     }
 
     public long transferData() throws IOException, ParseException, InterruptedException {
@@ -26,7 +27,7 @@ public class DataStream {
                 final FileInputStream fileInputStream = new FileInputStream(logFile);
                 final GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream) ;
                 final InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
-                final BufferedReader bufferedReader = new BufferedReader(inputStreamReader)
+                final BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         ) {
             String line = null;
             Date date = null;
@@ -35,7 +36,6 @@ public class DataStream {
             String action = null;
             int status = 0;
             int size = 0;
-            BatchStatement batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
             //32600    [30/Apr/1998:21:30:17   +0000]  "GET  /images/hm_bg.jpg    HTTP/1.0"  200   24736
             while((line = bufferedReader.readLine())!= null && line.length()!=0) {
                 i++;
@@ -78,11 +78,12 @@ public class DataStream {
                 }else {
                     size = Integer.parseInt(tokens[7]);
                 }
-
+                dataFilter.processSession(id,date,action,status,size);
                 if(i%1000000 == 0){
                     System.out.println(i);
                 }
             }
+            dataFilter.finish();
             return i;
         }
     }

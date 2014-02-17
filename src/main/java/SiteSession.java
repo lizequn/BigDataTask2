@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Unit tests for the SiteSession class
  *
- * @author Jonathan Halliday (jonathan.halliday@redhat.com)
+ * @author Jonathan Halliday (jonathan.halliday@redhat.com), changed by ZequnLi
  * @since 2014-01
  */
 public class SiteSession {
@@ -70,6 +70,7 @@ public class SiteSession {
     }
 
     public HyperLogLog getHyperLogLog() {
+
         return hyperLogLog;
     }
 
@@ -85,7 +86,7 @@ public class SiteSession {
     public SiteSession update(long hitMillis, String url) {
 
         if(lastHitMillis > 0 && lastHitMillis+MAX_IDLE_MS < hitMillis) {
-            SiteSession.resetGlobalMax();
+            //SiteSession.resetGlobalMax();
             return new SiteSession(this.id,hitMillis,url);
         }
         this.lastHitMillis = hitMillis;

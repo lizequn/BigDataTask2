@@ -10,8 +10,12 @@ public class DataFilter {
     private final Session session;
     private final HashMap<Integer,SiteSession> sessions;
     private final List<SiteSession> result;
+    private final PreparedStatement statement;
+    private BatchStatement batchStatement;
     public DataFilter(){
         session = CassandraController.getInstance().getSession();
+        statement = session.prepare("insert into sessions (clientid, starttime,endtime,totalhit,totalurl) values (?,?,?,?,?)");
+        batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
 
         result = new ArrayList<SiteSession>();
 
@@ -26,29 +30,40 @@ public class DataFilter {
             }
         };
     }
-    public void processSession(int id,Date accessTime,String action,int status,int size){
 
+    public void processSession(int id,Date accessTime,String action,int status,int size){
         SiteSession lastSession = sessions.get(id);
-        if(lastSession == null){
+        if(lastSession == null) {
             lastSession = new SiteSession(id,accessTime.getTime(),action);
             sessions.put(id,lastSession);
         }else {
             SiteSession siteSession = lastSession.update(accessTime.getTime(),action);
             if(siteSession != null){
                 result.add(lastSession);
+                sessions.remove(id);
                 sessions.put(id,siteSession);
             }
         }
-
-
+        if(result.size()>50){
+            flush();
+        }
     }
+
     public void flush(){
-
-        this.shutDown();
+        for(SiteSession siteSession:result){
+            batchStatement.add(statement.bind(siteSession.getId(), new Date(siteSession.getFirstHitMillis()), new Date(siteSession.getLastHitMillis()), siteSession.getHitCount(), siteSession.getHyperLogLog().cardinality()));
+        }
+        session.execute(batchStatement);
+        result.clear();
+        batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
     }
 
-    private void shutDown(){
-        session.shutdown();
+    public void finish(){
+        for(Map.Entry<Integer,SiteSession> entry : sessions.entrySet()){
+            result.add(entry.getValue());
+        }
+        flush();
+
     }
 
 }

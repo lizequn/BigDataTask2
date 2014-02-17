@@ -27,49 +27,5 @@ import static org.junit.Assert.assertEquals;
 
 public class testSiteSession {
 
-   // @Before
-    public void setup() {
-        SiteSession.resetGlobalMax();
-    }
 
-   // @Test
-    public void sessionTest() {
-
-        SiteSession siteSession = new SiteSession("user1", 100, "testURL");
-        siteSession.update(200, "testURL2");
-        siteSession.update(300, "testURL");
-        siteSession.update(400, "testURL2");
-
-        assertEquals("user1", siteSession.getId());
-        assertEquals(100, siteSession.getFirstHitMillis() );
-        assertEquals(400, siteSession.getLastHitMillis() );
-        assertEquals(4, siteSession.getHitCount());
-
-        assertEquals(2, siteSession.getHyperLogLog().cardinality());
-    }
-
-    //@Test
-    public void expiryTest() {
-
-        final AtomicReference<SiteSession> expiredSession = new AtomicReference<>(null);
-
-        HashMap<String,SiteSession> sessions = new LinkedHashMap<String,SiteSession>() {
-            protected boolean removeEldestEntry(Map.Entry eldest) {
-                SiteSession siteSession = (SiteSession)eldest.getValue();
-                boolean shouldExpire = siteSession.isExpired();
-                if(shouldExpire) {
-                    expiredSession.set(siteSession);
-                }
-                return siteSession.isExpired();
-            }
-        };
-
-        SiteSession session = new SiteSession("a", 100, "testURL");
-        sessions.put("a", session);
-        assertEquals(1, sessions.size());
-        assertNull(expiredSession.get());
-        sessions.put("b", new SiteSession("b", 101 + SiteSession.MAX_IDLE_MS, "testURL"));
-        assertEquals(1, sessions.size());
-        assertEquals(session, expiredSession.get());
-    }
 }
