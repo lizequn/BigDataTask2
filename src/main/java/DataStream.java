@@ -80,7 +80,8 @@ public class DataStream {
                 }
                 dataFilter.processSession(id,date,action,status,size);
                 if(i%1000000 == 0){
-                    System.out.println(i);
+                    System.out.print(i);
+                    System.out.println(","+dataFilter.getCount());
                 }
             }
             dataFilter.finish();

@@ -11,11 +11,15 @@ public class DataFilter {
     private final HashMap<Integer,SiteSession> sessions;
     private final List<SiteSession> result;
     private final PreparedStatement statement;
+    private final List<ResultSetFuture> resultSetFutures;
     private BatchStatement batchStatement;
+    private long count;
     public DataFilter(){
         session = CassandraController.getInstance().getSession();
         statement = session.prepare("insert into sessions (clientid, starttime,endtime,totalhit,totalurl) values (?,?,?,?,?)");
         batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
+        resultSetFutures = new ArrayList<ResultSetFuture>();
+        count = 0;
 
         result = new ArrayList<SiteSession>();
 
@@ -46,24 +50,74 @@ public class DataFilter {
         }
         if(result.size()>50){
             flush();
+           // checkExpire();
         }
     }
 
-    public void flush(){
+    private void checkExpire(){
+        int i =0;
+        if (sessions.size()>10000){
+            for(Map.Entry<Integer,SiteSession> entry : sessions.entrySet()){
+                if(entry.getValue().isExpired()){
+                    i++;
+                    result.add(entry.getValue());
+                    sessions.remove(entry.getKey());
+                }
+            }
+        }
+        System.out.println("reduce:"+i);
+
+        flush();
+    }
+
+    private void flush(){
         for(SiteSession siteSession:result){
             batchStatement.add(statement.bind(siteSession.getId(), new Date(siteSession.getFirstHitMillis()), new Date(siteSession.getLastHitMillis()), siteSession.getHitCount(), siteSession.getHyperLogLog().cardinality()));
+            count++;
         }
-        session.execute(batchStatement);
+        ResultSetFuture resultSetFuture = session.executeAsync(batchStatement);
+        resultSetFutures.add(resultSetFuture);
         result.clear();
         batchStatement = new BatchStatement(BatchStatement.Type.UNLOGGED);
+        if(resultSetFutures.size()>10){
+            for(ResultSetFuture resultSetFuture1:resultSetFutures){
+                resultSetFuture1.getUninterruptibly();
+            }
+            resultSetFutures.clear();
+        }
+    }
+
+    /**
+     * avoid the Batchstatement is larger than 65536
+     */
+    private void finishFlush(){
+        for(SiteSession siteSession:result){
+            ResultSetFuture resultSetFuture = session.executeAsync(statement.bind(siteSession.getId(), new Date(siteSession.getFirstHitMillis()), new Date(siteSession.getLastHitMillis()), siteSession.getHitCount(), siteSession.getHyperLogLog().cardinality()));
+            count++;
+            resultSetFutures.add(resultSetFuture);
+            if(resultSetFutures.size()>10){
+                for(ResultSetFuture resultSetFuture1:resultSetFutures){
+                    resultSetFuture1.getUninterruptibly();
+                }
+                resultSetFutures.clear();
+            }
+        }
+
     }
 
     public void finish(){
         for(Map.Entry<Integer,SiteSession> entry : sessions.entrySet()){
             result.add(entry.getValue());
         }
-        flush();
+        finishFlush();
+        for(ResultSetFuture resultSetFuture1:resultSetFutures){
+            resultSetFuture1.getUninterruptibly();
+        }
+        resultSetFutures.clear();
 
+    }
+    public long getCount(){
+        return count;
     }
 
 }
